@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="styleSheet" href="google sheet.css">
+ </head>   
+<body>
+      <div class="container">
+         <form method="post" action="https://script.google.com/macros/s/AKfycbxzbeex02FRMZMvnNz4GKU47EmQuLQSWAogB9JpEUTBgGnWCjmEioLlxI4CL6UnEPaA/exec" name="contact-form">
+
+        <h4>RMD LOAN FORM</h4>
+        <input type="number" name="AADHAAR-NUMBER"placeholder="Aathaar-number">
+        <input type="text" name="MEMBER-NAME"placeholder="Name">
+        <input type="number" name="PHONE-NUMBER"placeholder="Phone-number">
+        <input type="text" name="MEMBER-ADDRESS"placeholder="Address">
+        <input type="text" name="CENTER-NAME"placeholder="centerName">
+        <input type="date" name="LOAN-DATE"placeholder="date">
+
+        <input type="text" id="myInput"name="PRODUCT-TYPE"placeholder="PRODUCT-TYPE" list="optionsList">
+<datalist id="optionsList">
+
+  <option value="5K/10W"></option>
+  <option value="10K/21W"></option>
+  <option value="15K/30W"></option>
+  <option value="20K/40W"></option>
+  <option value="25K/50W"></option>
+</datalist>
+       
+<input type="text" id="day"  list="days"name="DAY-ORDER"placeholder="DAY-ORDER">
+<datalist id="days">
+ 
+  <option value="MONDAY">
+  <option value="TUESDAY">
+  <option value="WEDNESDAY">
+  <option value="THURSDAY">
+  <option value="FRIDAY">
+
+</datalist>
+
+
+
+        <label for="BRANCH">Choose a branch:</label>
+  <select name="BRANCH" id="BRANCH">
+    <option value="TENKASI">TENKASI</option>
+    <option value="SURANDAI">SURANDAI</option><BR><BR>
+      
+        <input type="submit" value="submit" id="submit">
+    </form>
+    </div>
+    <script src="google sheet.js"></script>
+
+ </body>
+ </html>
+   
